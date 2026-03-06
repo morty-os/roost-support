@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rooster — Privacy Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #2d353b; color: #d3c6aa; min-height: 100vh; padding: 40px 20px; }
+  .container { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 24px; color: #a7c080; margin-bottom: 8px; }
+  .date { font-size: 13px; color: #859289; margin-bottom: 32px; }
+  h2 { font-size: 17px; color: #a7c080; margin-top: 28px; margin-bottom: 8px; }
+  p, li { font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+  ul { padding-left: 20px; }
+  a { color: #a7c080; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: 6 March 2026</p>
+
+  <p>Rooster ("the App") is a property management tool for UK landlords. Your privacy matters to us.</p>
+
+  <h2>Data Storage</h2>
+  <p>All your data — properties, tenants, expenses, certificates, and tax settings — is stored <strong>locally on your device only</strong>. We do not operate servers or databases that store your personal information.</p>
+
+  <h2>What We Don't Collect</h2>
+  <ul>
+    <li>We do not collect personal information</li>
+    <li>We do not track your location</li>
+    <li>We do not use analytics or tracking SDKs</li>
+    <li>We do not sell or share data with third parties</li>
+    <li>We do not create user accounts</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>The App uses the following external services:</p>
+  <ul>
+    <li><strong>HM Land Registry</strong> — to look up property addresses and sale prices via their public SPARQL endpoint. Only the postcode you search is sent.</li>
+    <li><strong>Cloudflare Worker (PDF extraction)</strong> — when you upload a certificate or tenancy agreement PDF, it is sent to our Cloudflare Worker which forwards it to the Anthropic (Claude) API for text extraction. The PDF is processed in memory and not stored. No data is retained after the response is returned.</li>
+    <li><strong>RevenueCat</strong> — manages subscription status for the Pro tier. RevenueCat receives an anonymous device identifier and purchase receipt from Apple. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a>.</li>
+    <li><strong>Apple App Store</strong> — processes subscription payments. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+  </ul>
+
+  <h2>PDF Processing</h2>
+  <p>When you upload a PDF (certificate, tenancy agreement, or deposit protection document), it is sent via HTTPS to our Cloudflare Worker, which forwards it to the Anthropic API for extraction. The document is processed in real-time and is <strong>not stored, logged, or retained</strong> by either service beyond the duration of the request.</p>
+
+  <h2>Subscriptions</h2>
+  <p>Pro subscriptions are managed through Apple's App Store. Payment information is handled entirely by Apple. We do not have access to your payment details.</p>
+
+  <h2>Data Deletion</h2>
+  <p>You can delete all your data at any time using the "Reset All Data" option on the Dashboard. Since all data is stored locally, uninstalling the App also removes all data.</p>
+
+  <h2>Children</h2>
+  <p>The App is not intended for use by children under 17.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:morty.system@gmail.com">morty.system@gmail.com</a>.</p>
+</div>
+</body>
+</html>
